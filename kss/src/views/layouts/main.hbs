@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="{{ __.site.language }}">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="content-language" content="{{ __.site.language }}" />
+        <meta name="title" />
+        <meta name="keywords"  />
+        <meta name="abstract"  />
+        <meta name="description" content="{{ __.site.meta.description }}" />
+
+        <title>{{ __.site.title }}</title>
+
+        {{#if isMobile}}
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {{/if}}
+
+        {{#css}}
+            <link href="{{ this }}" rel="stylesheet" />
+        {{/css}}
+
+        <link rel="shortcut icon" href="images/layout/favicon.png">
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <img src="images/layout/logo_@1x.png" srcset="images/layout/logo_@1x.png 1x, images/layout/logo_@2x.png 2x" alt="StudioVictory"> <span class="logo-text">StudioVictory</span>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#" title="Mongo">Mongo</a></li>
+                    <li><a href="#" title="Express">Express</a></li>
+                    <li><a href="#" title="Angular">Angular</a></li>
+                    <li><a href="#" title="Node">Node</a></li>
+                    <li><a href="#" title="JavaScript">JavaScript</a></li>
+                    <li><a href="#" title="HTML5">HTML5</a></li>
+                    <li><a href="#" title="CSS3">CSS3</a></li>
+                    <li><a href="#" title="Sublime Text">Sublime Text</a></li>
+                    <li><a href="#" title="Grunt">Grunt</a></li>
+                    <li><a href="#" title="Vagrant">Vagrant</a></li>
+                    <li><a href="#" title="Docker">Docker</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-mobile-menu">
+                <ul>
+                    <li><a href="#" title="Code">Code</a></li>
+                    <li><a href="#" title="Design">Design</a></li>
+                    <li><a href="#" title="Databases">Databases</a></li>
+                    <li><a href="#" title="Programming">Programming</a></li>
+                    <li><a href="#" title="Frameworks">Frameworks</a></li>
+                    <li><a href="#" title="All Categories">All Categories</a></li>
+                    <li><a href="#" title="Forums">Forums</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-mobile no-display">
+                <a href="#" class="pull"><i class="fa fa-sort-desc"></i></a>
+            </div>
+        </header>
+
+        {{{ body }}}
+
+        <div class="footer">
+            <div class="clear"></div>
+            <p>&copy; StudioVictory.com 2015</p>
+        </div>
+    </body>
+</html>
+{{/minify}}

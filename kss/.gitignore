@@ -1,0 +1,11 @@
+ .DS_Store
+.vagrant
+Berksfile.lock
+git-info.txt
+logs/*.log
+node_modules
+npm-debug.log
+src/public/bower_components
+src/public/css/**/*.css
+src/public/css/*.css
+

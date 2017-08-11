@@ -1,0 +1,44 @@
+---
+production: &default
+  serverPort: 3000
+  baseUrl: http://www.victory.com
+  baseApi: /api/
+  views:
+    engine: .hbs
+    extension: .hbs
+    layout: main
+  html:
+    minify: true
+    css:
+      compress: true
+      stylusPrecompile: true
+  controllers:
+    default: home
+  languages:
+    default: en
+    list: [en, es]
+  security:
+    secret: v1ct0ry.com
+  session:
+    cookieDomain: .victory.com
+    maxAge: 86400
+    cookiePrefix: 'svSession_'
+    path: '/'
+    httpOnly: true
+
+stage: &stage
+  <<: *default
+  baseUrl: http://stage.victory.com
+
+latest: &latest
+  <<: *stage
+  baseUrl: http://latest.victory.com
+
+development:
+  <<: *latest
+  baseUrl: http://local.victory.com
+  html:
+    minify: false
+    css:
+      compress: false
+      stylusPrecompile: false

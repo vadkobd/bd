@@ -1,0 +1,13 @@
+{
+  "name": "victory",
+  "version": "0.0.1",
+  "author": "J",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.4.3",
+    "font-awesome": "latest",
+    "lodash": "2.4.1",
+    "normalize-css": "latest",
+    "requirejs": "latest"
+  }
+}
