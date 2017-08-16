@@ -6,12 +6,12 @@
     "preinstall":"npm prune",
     "postinstall":"bower prune; bower install;grunt githooks"
   },
-  "autor":"Javier",
+  "autor":" Rudd",
   "license":"MTI",
   "repository":
   {
     "type":"git",
-    "url":"git://github.com/ItsJDLB/Trabajo-de-memo"
+    "url":"git://github.com/vadkobd/bd/tree/master/kss"
   },
   "dependencies": {
     "body-parser": "~1.17.1",
